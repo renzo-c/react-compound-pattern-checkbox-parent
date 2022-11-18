@@ -1,3 +1,3 @@
 # React Compound Pattern - Checkbox List 🗹
 
-Checkbox list with Select All option implemented with compound pattern
+Checkbox list with _Select All_ option implemented with compound pattern ✌. [Demo](https://codesandbox.io/s/github/renzo-c/react-compound-pattern-checkbox-parent)
