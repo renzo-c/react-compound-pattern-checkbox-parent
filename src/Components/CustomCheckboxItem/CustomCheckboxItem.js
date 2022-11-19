@@ -21,14 +21,13 @@ const CustomCheckboxItem = (props) => {
     : false;
 
   useLayoutEffect(() => {
-    console.log(inputRef.current);
     if (inputRef.current && someValuesChecked) {
       inputRef.current.indeterminate = true;
     }
   }, [someValuesChecked]);
 
   const label = allValuesChecked ? "Unselect All" : "Select All";
-
+console.log({label})
   const handleCheckAllChange = () => {
     const newCheckedValues = Object.keys(checkedValues).reduce(
       (res, key) => ({ ...res, [key]: !isCheckboxChecked }),

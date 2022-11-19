@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import './style.css';
+import "./style.css";
 
 const getBooleanObject = (children) => {
   const newCheckedValues = {};
@@ -16,7 +16,6 @@ const CheckboxList = ({ children }) => {
   const [checkedValues, setCheckedValues] = useState(() =>
     getBooleanObject(children)
   );
-
 
   const handleCheckedValue = (key) => {
     const res = { ...checkedValues, [key]: !checkedValues[key] };

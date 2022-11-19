@@ -10,7 +10,7 @@ const CheckboxItem = (props) => {
   const handleChange = () => {
     handleCheckedValue(key);
   };
-
+  console.log({ checked: checkedValues[key] });
   return (
     <li>
       <input
@@ -20,7 +20,7 @@ const CheckboxItem = (props) => {
         checked={checkedValues[key]}
         onChange={handleChange}
       />
-      <span/>
+      <span />
       <label htmlFor={key}>{label}</label>
     </li>
   );
